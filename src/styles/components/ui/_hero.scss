@@ -1,0 +1,45 @@
+.c-hero {
+  position: relative;
+  background-image: url(/avatar/Avatar.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 50%;
+  min-height: 100vh;
+  padding-top: 240px;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  color: #FFFFFF;
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(181.37deg, rgba(217, 217, 217, 0) 21.07%, #000000 105.47%);
+    pointer-events: none;
+  }
+
+  &__content {
+    position: relative;
+    top: 28rem;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+
+    > h2 {
+      margin-bottom: 15px;
+      font-family: 'League Script', cursive;
+      font-weight: 900;
+      font-size: clamp(24px, 4vw, 35px);
+      flex-shrink: 0;
+    }
+
+    > p {
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+}

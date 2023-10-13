@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.79 74.95">
+    <defs>
+        <style>
+            .cls-1 {
+            letter-spacing: .05em;
+            }
+
+            .cls-2 {
+            letter-spacing: 0em;
+            }
+
+            .cls-3 {
+            letter-spacing: .23em;
+            }
+
+            .cls-4 {
+            fill: #FFFFFF;
+            font-family: 'League Script', cursive;
+            font-size: 60px;
+            stroke: #FFFFFF;
+            stroke-miterlimit: 10;
+            stroke-width: .25px;
+            }
+
+            .cls-5 {
+            letter-spacing: -.06em;
+            }
+
+            .cls-6 {
+            letter-spacing: -.06em;
+            }
+
+            .cls-7 {
+            letter-spacing: -.02em;
+            }
+        </style>
+    </defs>
+    <text class="cls-4" transform="translate(.12 44.52)">
+        <tspan class="cls-5" x="0" y="0">Francis</tspan>
+        <tspan class="cls-2" x="179.76" y="0">K</tspan>
+        <tspan class="cls-1" x="234.12" y="0">O</tspan>
+        <tspan class="cls-6" x="274.37" y="0">U</tspan>
+        <tspan class="cls-3" x="332.15" y="0">A</tspan>
+        <tspan class="cls-7" x="402.53" y="0">H</tspan>
+        <tspan class="cls-5" x="453.29" y="0">O</tspan>
+    </text>
+</svg>

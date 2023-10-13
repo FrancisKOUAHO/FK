@@ -1,0 +1,46 @@
+/* Variables globals colors */
+$primary-color: #d03422;
+$secondary-color: #484848;
+$tertiary-color: #000000;
+$main-color: #FFFFFF;
+$light-grey-color: #C2C6CC;
+$medium-grey-color: #9A9A9A;
+
+
+/* Variables globals background */
+$primary-background-color: #05050E;
+$secondary-background-color: #EFF0F2;
+
+/* Variables globals dark */
+$dark-color: linear-gradient(90deg, rgba(1, 1, 15, 1) 0%, rgb(15, 15, 15) 71%);
+
+/* Variables globals texts colors */
+$primary-text-color: #4376FF;
+$secondary-text-color: #484848;
+$tertiary-text-color: #000000;
+
+/* Variables globals fonts text */
+$primary-fonts: "Montserrat", sans-serif;
+$secondary-fonts: "Poppins", sans-serif;
+
+/* Size text */
+$x3-small: 12px;
+$x2-small: 13px;
+$x-small: 14px;
+$small: 15px;
+$medium: 16px;
+$x2-medium: 18px;
+$large: 20px;
+$x-large: 22px;
+$x2-large: 24px;
+$x3-large: 28px;
+$x4-large: 32px;
+$x5-large: 35px;
+$x6-large: 36px;
+$x7-large: 48px;
+$x8-large: 60px;
+
+/* Responsive breakpoints */
+$desktop: (min-width: 1024px);
+$tablet: (min-width: 768px) and (max-width: 1023px);
+$mobile: (max-width: 767px);

@@ -1,0 +1,61 @@
+@use '../settings/' as *;
+
+.c-main-nav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  @include flex($justify: space-around, $align: center, $column-gap: 40px);
+
+  > h1 {
+    font-family: 'League Script', cursive;
+    font-weight: 900;
+    font-size: clamp(24px, 4vw, 35px);
+    flex-shrink: 0;
+
+    > span {
+      margin-left: 10px;
+      color: $primary-color;
+    }
+  }
+
+  > nav {
+    @include flex($justify: space-around, $align: center, $column-gap: 40px);
+    margin-right: 15%;
+    min-width: 600px;
+    height: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+    background-color: $medium-grey-color;
+
+    > ul {
+      display: flex;
+      column-gap: 60px;
+
+      > li {
+        display: flex;
+        align-items: center;
+
+        &.active {
+          border-radius: 20px;
+          border: 1px solid $primary-color;
+          padding: 8px;
+        }
+
+        &.hide-small {
+          @media screen and (max-width: 640px) {
+            display: none;
+          }
+        }
+
+        &.hide-small-xs {
+          @media screen and (max-width: 400px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+}
