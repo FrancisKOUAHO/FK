@@ -2,22 +2,57 @@ import {FunctionComponent} from "react";
 
 const Skills: FunctionComponent = () => {
 
-    const designSkills = [
+    const skills = [
+        {
+            name: "VueJS",
+            icon: "vuejs.svg",
+        },
+        {
+            name: "NuxtJS",
+            icon: "nuxtjs.svg",
+        },
+        {
+            name: "NodeJS",
+            icon: "nodejs.svg",
+        },
+        {
+            name: "NodeJS",
+            icon: "nodejs.svg",
+        },
+        {
+            name: "AdonisJS",
+            icon: "adonisjs.svg",
+            checked: "text-gradient-primary"
+        },
+        {
+            name: "MongoDB",
+            icon: "mongodb.svg",
+        },
+        {
+            name: "MongoDB",
+            icon: "mongodb.svg",
+        },
+        {
+            name: "Jest",
+            icon: "jest.svg"
+        },
+        {
+            name: "Docker",
+            icon: "docker.svg",
+            checked: "text-gradient-primary"
+        },
         {
             name: "Figma",
-            icon: "figma-rainbow.svg",
+            icon: "figma.svg",
             checked: "text-gradient-primary"
         },
         {
             name: "material-ui",
-            icon: "material_ui.svg",
+            icon: "material-ui.svg",
         },
-    ];
-
-    const langageSkills = [
         {
             name: "Typescript",
-            icon: "typescript-rainbow.svg",
+            icon: "typescript.svg",
             checked: "text-gradient-primary"
         },
         {
@@ -27,13 +62,14 @@ const Skills: FunctionComponent = () => {
         },
         {
             name: "PHP",
-            icon: "PHP.svg",
+            icon: "php.svg",
             checked: "text-gradient-primary"
         },
-
-    ];
-
-    const frontEndSkills = [
+        {
+            name: "ReactJS",
+            icon: "react.svg",
+            checked: "text-gradient-primary",
+        },
         {
             name: "ReactJS",
             icon: "react.svg",
@@ -46,213 +82,155 @@ const Skills: FunctionComponent = () => {
         },
         {
             name: "Angular",
-            icon: "Angular.svg",
+            icon: "angular.svg",
             checked: "text-gradient-primary",
         },
         {
-            name: "VueJS",
-            icon: "vuejs.svg",
-        },
-        {
-            name: "NuxtJS",
-            icon: "nuxtjs.svg",
-        },
-
-    ];
-
-
-    const backEndSkills = [
-        {
-            name: "NodeJS",
-            icon: "nodejs.svg",
-        },
-        {
-            name: "AdonisJS",
-            icon: "AdonisJS.svg",
-            checked: "text-gradient-primary"
-        },
-    ];
-
-    const databaseSkills = [
-        {
-            name: "MongoDB",
-            icon: "mongodb.svg",
-        },
-        {
-            name: "PostgreSQL",
-            icon: "PostgresSQL.svg",
-            checked: "text-gradient-primary"
-        },
-    ];
-
-    const otherSkills = [
-        {
-            name: "GitLab & GitHub",
-            icon: "git.svg",
-            checked: "text-gradient-primary"
-        },
-        {
-            name: "Jest",
-            icon: "jest.svg"
-        },
-        {
-            name: "Japa",
-            icon: "jest.svg",
-            checked: "text-gradient-primary"
-        },
-        {
-            name: "Vitest",
-            icon: "vitest.svg",
-            checked: "text-gradient-primary"
-        },
-        {
-            name: "Docker",
-            icon: "docker.svg",
-            checked: "text-gradient-primary"
+            name: "Angular",
+            icon: "angular.svg",
+            checked: "text-gradient-primary",
         },
     ];
 
     return (
-        <div className="hidden sm:block w-full o-container" id="Skills">
-            <div className="w-full">
-                <h2 className="mb-8 sm:mb-10 text-4xl text-center text-white fadeup-enter fadeup-enter-done">Skills</h2>
-                <div className="flex justify-between">
-                    <div>
-                        <h3 className="text-2xl font-bold fadeup-enter text-white fadeup-enter-done"
-                            style={{transitionDelay: "100ms"}}>Languages</h3>
-                        {
-                            langageSkills.map((skill, index) => {
-                                return (
-                                    <ul className="flex flex-col gap-2 mt-4" key={index}>
-                                        <span className="fadeup-enter fadeup-enter-done"
-                                              style={{transitionDelay: "120ms"}}>
-                                            <li className="flex items-center gap-2 text-lg">
-                                            <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
-                                                     height={20}/></span>
-                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
-                                            </li>
-                                        </span>
-                                    </ul>
-                                )
-                            })
-                        }
-                    </div>
+        <section className="o-container">
+            <h2 className="mb-8 sm:mb-10 text-4xl text-center text-white">Skills</h2>
 
-                    <div>
-                        <h3 className="text-2xl font-bold fadeup-enter text-white fadeup-enter-done"
-                            style={{transitionDelay: "100ms"}}>Front-end</h3>
-                        {
-                            frontEndSkills.map((skill, index) => {
-                                return (
-                                    <ul className="flex flex-col gap-2 mt-4" key={index}>
-                                        <span className="fadeup-enter fadeup-enter-done"
-                                              style={{transitionDelay: "120ms"}}>
-                                            <li className="flex items-center gap-2 text-lg">
-                                            <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
-                                                     height={20}/></span>
-                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
-                                            </li>
-                                        </span>
-                                    </ul>
-                                )
-                            })
-                        }
-                    </div>
+            <div className="max-w-[100vw] m-auto relative col-start-1 row-start-1">
+                <div
+                    className="absolute top-0 bottom-0 left-0 right-0 w-full bg-gradient-radial from-[#7D459A] to-darkPurple"></div>
 
-                    <div>
-                        <h3 className="text-2xl font-bold fadeup-enter text-white fadeup-enter-done"
-                            style={{transitionDelay: "100ms"}}>Back-end</h3>
 
-                        {
-                            backEndSkills.map((skill, index) => {
-                                return (
-                                    <ul className="flex flex-col gap-2 mt-4" key={index}>
-                                        <span className="fadeup-enter fadeup-enter-done"
-                                              style={{transitionDelay: "120ms"}}>
-                                            <li className="flex items-center gap-2 text-lg">
-                                            <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
-                                                     height={20}/></span>
-                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
-                                            </li>
-                                        </span>
-                                    </ul>
-                                )
-                            })
-                        }
-                    </div>
-
-                    <div>
-                        <h3 className="text-2xl font-bold fadeup-enter text-white fadeup-enter-done"
-                            style={{transitionDelay: "100ms"}}>Database</h3>
-
-                        {
-                            databaseSkills.map((skill, index) => {
-                                return (
-                                    <ul className="flex flex-col gap-2 mt-4" key={index}>
-                                        <span className="fadeup-enter fadeup-enter-done"
-                                              style={{transitionDelay: "120ms"}}>
-                                            <li className="flex items-center gap-2 text-lg">
-                                            <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
-                                                     height={20}/></span>
-                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
-                                            </li>
-                                        </span>
-                                    </ul>
-                                )
-                            })
-                        }
-                    </div>
-
-                    <div>
-                        <h3 className="text-2xl font-bold fadeup-enter text-white fadeup-enter-done"
-                            style={{transitionDelay: "100ms"}}>Design</h3>
-                        {
-                            designSkills.map((skill, index) => {
-                                return (
-                                    <ul className="flex flex-col gap-2 mt-4" key={index}>
-                                        <span className="fadeup-enter fadeup-enter-done"
-                                              style={{transitionDelay: "120ms"}}>
-                                            <li className="flex items-center gap-2 text-lg">
-                                            <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
-                                                     height={20}/></span>
-                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
-                                            </li>
-                                        </span>
-                                    </ul>
-                                )
-                            })
-                        }
-                    </div>
-
-                    <div>
-                        <h3 className="text-2xl font-bold fadeup-enter text-white fadeup-enter-done"
-                            style={{transitionDelay: "100ms"}}>Other</h3>
-                        {
-                            otherSkills.map((skill, index) => {
-                                return (
-                                    <ul className="flex flex-col gap-2 mt-4" key={index}>
-                                        <span className="fadeup-enter fadeup-enter-done"
-                                              style={{transitionDelay: "120ms"}}>
-                                            <li className="flex items-center gap-2 text-lg">
-                                            <span className="SkillsList_rainbowIcon__bSZdk">
-                                                <img src={`/icon/${skill.icon}`} alt="Figma" width={20}
-                                                     height={20}/></span>
-                                            <span className={`${skill.checked} font-bold`}>{skill.name}</span>
-                                            </li>
-                                        </span>
-                                    </ul>
-                                )
-                            })
-                        }
-                    </div>
+                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                    <ul
+                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideLeft1"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul
+                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideLeft2"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
+
+                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                    <ul
+                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideRight1"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul
+                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideRight2"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                    <ul
+                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideLeft1"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul
+                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideLeft2"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                    <ul
+                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideRight1"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul
+                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideRight2"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                    <ul
+                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideLeft1"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul
+                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideLeft2"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                    <ul
+                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideRight1"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul
+                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideRight2"
+                    >
+                        {skills.map((skill, index) => (
+                            <li key={index}>
+                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div
+                    className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-darkPurple to-darkPurple via-transparent"></div>
             </div>
-        </div>
+        </section>
     )
 }
 
