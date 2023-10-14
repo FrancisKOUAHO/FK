@@ -93,144 +93,140 @@ const Skills: FunctionComponent = () => {
     ];
 
     return (
-        <section className="o-container">
-            <h2 className="mb-8 sm:mb-10 text-4xl text-center text-white">Skills</h2>
-
-            <div className="max-w-[100vw] m-auto relative col-start-1 row-start-1">
-                <div
-                    className="absolute top-0 bottom-0 left-0 right-0 w-full bg-gradient-radial from-[#7D459A] to-darkPurple"></div>
+        <div className="max-w-[100vw] m-auto relative col-start-1 row-start-1">
+            <div
+                className="absolute top-0 bottom-0 left-0 right-0 w-full bg-gradient-radial from-[#030309] to-darkPurple"></div>
 
 
-                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
-                    <ul
-                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideLeft1"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul
-                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideLeft2"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
-                    <ul
-                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideRight1"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul
-                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideRight2"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
-                    <ul
-                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideLeft1"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul
-                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideLeft2"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
-                    <ul
-                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideRight1"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul
-                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideRight2"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
-                    <ul
-                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideLeft1"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul
-                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideLeft2"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
-                    <ul
-                        className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideRight1"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul
-                        className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideRight2"
-                    >
-                        {skills.map((skill, index) => (
-                            <li key={index}>
-                                <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                <div
-                    className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-darkPurple to-darkPurple via-transparent"></div>
+            <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                <ul
+                    className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideLeft1"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+                <ul
+                    className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideLeft2"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
             </div>
-        </section>
+
+            <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                <ul
+                    className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideRight1"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+                <ul
+                    className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideRight2"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                <ul
+                    className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideLeft1"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+                <ul
+                    className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideLeft2"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                <ul
+                    className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideRight1"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+                <ul
+                    className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideRight2"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                <ul
+                    className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideLeft1"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+                <ul
+                    className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideLeft2"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className="relative flex space-x-2 overflow-hidden opacity-10 select-none">
+                <ul
+                    className="flex h-[55px] min-w-full space-x-4 shrink-0 animate-slideRight1"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+                <ul
+                    className="absolute top-0 flex min-w-full space-x-2 shrink-0 animate-slideRight2"
+                >
+                    {skills.map((skill, index) => (
+                        <li key={index}>
+                            <img src={`skillz/${skill.icon}`} alt={skill.name} className="w-10 h-10"/>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div
+                className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-darkPurple to-darkPurple via-transparent"></div>
+        </div>
     )
 }
 

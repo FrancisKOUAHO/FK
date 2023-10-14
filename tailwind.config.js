@@ -6,6 +6,9 @@ export default {
     ],
     theme: {
         extend: {
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            },
             animation: {
                 slideLeft1: 'slideLeft1 40s linear infinite',
                 slideLeft2: 'slideLeft2 40s linear infinite',
