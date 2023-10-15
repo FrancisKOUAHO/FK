@@ -153,7 +153,7 @@ const Skills: FunctionComponent = () => {
                 className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-darkPurple to-darkPurple via-transparent"></div>
 
             <div
-                className="absolute top-0 bottom-0 left-0 right-0 flex flex-wrap justify-center items-center mx-auto my-auto w-full gap-10 px-10 md:px-0 md:w-1/2 grid-rows-auto">
+                className="absolute top-0 bottom-0 left-0 right-0 flex flex-wrap justify-center items-center mx-auto my-auto w-full gap-10 px-10 md:px-0 md:w-2/2 grid-rows-auto">
                 {skillsIcons.map((skillsIcon: SkillIcon, index: number) => (
                     <span className="flex items-center justify-center w-20 h-20" key={index}
                           onMouseEnter={(e) => addFilter(e, `${skillsIcon.filter}`)}
