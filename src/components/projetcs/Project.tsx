@@ -35,13 +35,13 @@ const Project: FunctionComponent = () => {
                 <li className={`item ${visibleItems.includes(index) ? 'visible' : ''}`} key={index}>
                     <div className="item__background" style={{ backgroundImage: `url('projects/${project.imageUrl}')` }}></div>
                     <div className="item__content">
-                        <span className="item__number">0{index + 1}</span>
+                        <span className="item__number">{(index + 1).toString().padStart(2, '0')}</span>
                         <h2>{project.title}</h2>
                         <div className="item__metas">
-              <span>
-                Github
-                <a href={project.link} target="_blank"></a>
-              </span>
+                            <span>
+                                Github
+                                <a href={project.link} target="_blank"></a>
+                            </span>
                             <strong>
                                 Voir
                                 <a href={project.view} target="_blank"></a>
