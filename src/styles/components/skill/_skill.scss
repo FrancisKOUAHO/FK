@@ -1,8 +1,10 @@
 @use '../../settings/' as *;
 
 .c-skill {
+  margin-bottom: 200px;
+
   h2 {
-    font-family: 'League Script', cursive;
+    font-family: 'Crimson Text', sans-serif;
     font-weight: 900;
     font-size: clamp(24px, 4vw, 35px);
     flex-shrink: 0;
