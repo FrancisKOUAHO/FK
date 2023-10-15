@@ -38,14 +38,8 @@ const Project: FunctionComponent = () => {
                         <span className="item__number">{(index + 1).toString().padStart(2, '0')}</span>
                         <h2>{project.title}</h2>
                         <div className="item__metas">
-                            <span>
-                                Github
-                                <a href={project.link} target="_blank"></a>
-                            </span>
-                            <strong>
-                                Voir
-                                <a href={project.view} target="_blank"></a>
-                            </strong>
+                            <span>Brand</span>
+                            <strong>Rebook</strong>
                         </div>
                     </div>
                 </li>
