@@ -17,6 +17,7 @@
       opacity: 0;
       transition: opacity 1s ease-out;
       overflow: hidden;
+      z-index: 1;
 
       &:first-child {
         border-top: .2vw solid $main-color;
@@ -31,13 +32,14 @@
         width: 100%;
         transform: scaleX(0);
         bottom: 0;
-        transition: transform 1s ease-out;
         transform-origin: left;
+        transition: transform 1s ease-out, width 1s ease-out;
       }
 
       &.visible {
         &:before {
           transform: scaleX(1);
+          width: 100%;
         }
 
         .item__content {
@@ -106,6 +108,10 @@
           margin-top: 4.7vw;
           font-size: 2vw;
           align-self: flex-start;
+
+          @media screen and (max-width: 767px) {
+            font-size: 4vw;
+          }
         }
 
         .item__metas {
@@ -126,11 +132,25 @@
             font-weight: 700;
             font-size: 1.5vw;
           }
+
+          @media screen and (max-width: 767px) {
+            span {
+              font-size: 2vw;
+            }
+
+            strong {
+              font-size: 2.5vw;
+            }
+          }
         }
 
         h2 {
           font-size: 4vw;
           font-weight: 400;
+
+          @media screen and (max-width: 767px) {
+            font-size: 6vw;
+          }
         }
       }
     }

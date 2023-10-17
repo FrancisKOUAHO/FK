@@ -4,11 +4,11 @@ const NavBar: FunctionComponent = () => {
     return (
         <nav>
             <ul>
-                <li className="active"><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="">Hire me</a></li>
+                <li className="active"><a href="#">Accueil</a></li>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="">Engagez-moi</a></li>
             </ul>
         </nav>
     )

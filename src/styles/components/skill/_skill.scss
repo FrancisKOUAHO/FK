@@ -1,12 +1,37 @@
 @use '../../settings/' as *;
 
 .c-skill {
-  margin-bottom: 200px;
-
   h2 {
     font-family: 'Crimson Text', sans-serif;
     font-weight: 900;
     font-size: clamp(24px, 4vw, 35px);
     flex-shrink: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    .c-skill__icons:last-child,
+    .c-skill__icons:nth-last-child(2),
+    .c-skill__icons:nth-last-child(3),
+    .c-skill__icons:nth-last-child(4),
+    .c-skill__icons:nth-last-child(5),
+    .c-skill__icons:nth-last-child(6),
+    .c-skill__icons:nth-last-child(7),
+    .c-skill__icons:nth-last-child(8) {
+      display: none;
+    }
+  }
+
+  .c-skill__icon {
+    @media screen and (max-width: 767px) {
+      gap: 0;
+      bottom: auto;
+    }
+
+    .c-skill__image {
+      @media screen and (max-width: 767px) {
+        width: 60px;
+        height: 60px;
+      }
+    }
   }
 }

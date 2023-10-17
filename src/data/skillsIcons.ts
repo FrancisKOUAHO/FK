@@ -56,7 +56,6 @@ const skillsIcons: SkillIcon[] = [
         icon: "git.svg",
         filter: "drop-shadow(rgb(240, 80, 15) 2px 2px 10px)"
     },
-
 ];
 
 export default skillsIcons;

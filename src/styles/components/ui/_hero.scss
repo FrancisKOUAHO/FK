@@ -9,8 +9,12 @@
   min-height: 100vh;
   padding-top: 240px;
   padding-bottom: 60px;
-  margin-bottom: 200px;
   color: #FFFFFF;
+
+  @media screen and (max-width: 767px) {
+    min-height: 0;
+    background-size: 110%;
+  }
 
   &::before {
     position: absolute;
@@ -32,6 +36,10 @@
     width: 100%;
     box-sizing: border-box;
 
+    @media screen and (max-width: 767px) {
+      top: 3rem;
+    }
+
     > h2 {
       margin-bottom: 15px;
       font-family: 'League Script', cursive;
@@ -42,6 +50,10 @@
 
     > p {
       font-family: 'Montserrat', sans-serif;
+
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
     }
   }
 }
