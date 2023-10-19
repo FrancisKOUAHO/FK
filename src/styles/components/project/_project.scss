@@ -51,10 +51,6 @@
       }
 
       &:hover {
-        .item__content {
-          color: $primary-color;
-        }
-
         .item__background {
           &:after {
             transform: translateY(-100%);

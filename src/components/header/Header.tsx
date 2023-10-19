@@ -5,8 +5,12 @@ import HeaderProps from "../../type/HeaderProps.ts";
 const Header: FunctionComponent<HeaderProps> = ({customStyle}) => {
     return (
         <header className="c-main-nav" style={customStyle}>
-            <h1>Francis <span>KOUAHO</span></h1>
+            <a href="https://www.linkedin.com/in/francis-kouaho/" target="_blank">
+                <img src="/icons/LinkedIn.svg" alt="" width={21}/>
+            </a>
+
             <NavBar/>
+
             <a href="https://www.linkedin.com/in/francis-kouaho/" target="_blank">
                 <img src="/icons/LinkedIn.svg" alt="" width={21}/>
             </a>

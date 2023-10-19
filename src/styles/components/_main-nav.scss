@@ -15,7 +15,6 @@
 
     > span {
       margin-left: 10px;
-      color: $primary-color;
     }
   }
 
@@ -27,7 +26,6 @@
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 40px;
-    background-color: $primary-color;
 
     > ul {
       display: flex;
@@ -38,9 +36,8 @@
         align-items: center;
 
         &.active {
-          border-radius: 20px;
-          border: 1px solid $main-color;
-          padding: 8px;
+          border-bottom: 1px solid $main-color;
+          padding: 10px;
         }
 
         &.hide-small {
@@ -58,7 +55,7 @@
     }
 
     @media screen and (max-width: 767px) {
-        display: none;
+      display: none;
     }
   }
 
