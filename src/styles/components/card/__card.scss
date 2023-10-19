@@ -1,0 +1,12 @@
+@use '../../settings/' as *;
+
+.c-cards {
+  margin-bottom: 150px;
+
+  .cards {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 30rem);
+    gap: 4rem;
+  }
+}

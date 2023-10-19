@@ -1,3 +1,4 @@
+import {motion} from "framer-motion";
 import Header from "../header/Header.tsx";
 import {FunctionComponent} from "react";
 
@@ -14,6 +15,14 @@ const Hero: FunctionComponent = () => {
                     je serais ravi de rejoindre votre équipe pour collaborer à la création de solutions numériques
                     exceptionnelles.</p>
             </div>
+
+            <motion.img
+                className="c-hero__mouse"
+                src="/icons/mouse.svg"
+                alt="Image"
+                initial={{ x: 100 }}
+                animate={{ x: 0 }}
+            />
         </div>
     )
 }

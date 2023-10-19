@@ -42,7 +42,7 @@ const Project: FunctionComponent = () => {
                             <a href={project.link} target="_blank">
                                 <span>voir le projet</span>
                             </a>
-                            <a href={project.view} target="_blank" className="mt-2">
+                            <a href={project.view} target="_blank" className="mt-4">
                                 <strong>Github</strong>
                             </a>
                         </div>

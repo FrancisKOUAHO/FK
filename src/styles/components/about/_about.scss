@@ -1,11 +1,12 @@
 @use '../../settings/' as *;
 
 .c-about {
-  h2 {
-    font-family: 'Crimson Text', sans-serif;
+  p {
+    font-family: 'Calligraffitti', cursive;
     font-weight: 900;
     font-size: clamp(24px, 4vw, 35px);
     flex-shrink: 0;
+    color: $main-color !important;
   }
 
   .c-about__wrapper {
@@ -13,8 +14,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 120px;
 
-    h2 {
+
+    p {
       font-family: 'Calligraffitti', cursive;
       font-weight: 900;
       font-size: 4vw;
@@ -22,4 +25,25 @@
     }
   }
 
+  .c-about-wrapper__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    .c-about__name {
+      h2 {
+        font-family: 'League Script', cursive;
+        font-weight: 900;
+        font-size: clamp(24px, 4vw, 35px);
+        flex-shrink: 0;
+
+        span {
+          margin-left: 10px;
+          color: $primary-color;
+        }
+      }
+    }
+  }
 }
