@@ -5,21 +5,21 @@ import Experience from "../experience/Experience.tsx";
 
 const Hero: FunctionComponent = () => {
     return (
-        <div style={{ width: "100vw", height: "100vh" }}>
+        <div className="c-hero">
             <Canvas
                 flat
-                camera={{position: [0, 0, 5], fov: 42}}
-                className="absolute top-[32rem]"
+                camera={{position: [0, 2, 5], fov: 40}}
+                className="canvas"
             >
                 <Experience/>
             </Canvas>
 
-            <div className="c-hero">
+            <div className="c-hero__wrapper">
                 <Header/>
 
                 <h1>Francis <span>KOUAHO</span></h1>
 
-               {/* <div className="c-hero__content">
+                {/* <div className="c-hero__content">
                         <h2>Bonjour !</h2>
                         <p>Je suis Francis Kouaho, un développeur Front-End passionné par la création d'expériences web
                             exceptionnelles. Mon code est l'intersection de la créativité et de la précision, donnant

@@ -18,7 +18,7 @@ const Skills: FunctionComponent = () => {
     }
 
     return (
-        <div className="max-w-[100vw] m-auto relative col-start-1 row-start-1">
+        <div className="max-w-[100vw] m-auto relative col-start-1 row-start-1 c-skill__wrapper">
 
             <div className="c-skill__icons relative flex space-x-2 overflow-hidden opacity-[0.1] select-none">
                 <ul

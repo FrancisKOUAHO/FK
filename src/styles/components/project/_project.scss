@@ -1,7 +1,7 @@
 @use '../../settings/' as *;
 
 .c-project {
-  background: #04040C;
+  background: #000000;
   margin-bottom: 120px;
 
   h2 {
@@ -81,7 +81,7 @@
           content: '';
           position: absolute;
           inset: 0;
-          background: #04040C;
+          background: #000000;
           transition: transform .3s ease-out;
         }
       }
