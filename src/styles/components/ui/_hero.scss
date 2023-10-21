@@ -4,21 +4,11 @@
   width: 100vw;
   height: 155vh;
 
-  @media screen and (max-width: 767px) {
-    height: 100vh;
-  }
-
   .canvas {
-    position: absolute;
-    top: 12rem;
-
-    @media screen and (max-width: 767px) {
-      top: 14rem;
-    }
+    top: 11rem;
   }
 
   .c-hero__wrapper {
-    margin-bottom: 120px;
 
     .c-hero__avatar {
       position: relative;

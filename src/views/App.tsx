@@ -18,7 +18,7 @@ const App: FunctionComponent = () => {
             </section>
 
             <section className="c-project">
-                    <Project/>
+                <Project/>
             </section>
 
             <section className="c-cards">
