@@ -27,7 +27,7 @@ const projects: Project[] = [
         title: "Myaichat Dashboard",
         link: "https://github.com/FrancisKOUAHO/myaichat",
         view: "https://app.myaichat.io/",
-        imageUrl: "myaichat-dashboard.jpeg",
+        imageUrl: "myaichat-dashboard.png",
         icon: "📲",
         description: "Myaichat un chatbot support cleint.",
         skills: [
@@ -49,7 +49,7 @@ const projects: Project[] = [
         title: "LetsGo",
         link: "https://github.com/FrancisKOUAHO?tab=repositories&q=front&type=&language=&sort=",
         view: "https://letsgoeurope.fr/",
-        imageUrl: "",
+        imageUrl: "letsgo.png",
         icon: "📲",
         description: "Lets'Go : explorez, réservez attractions et activités proches.",
         skills: [
@@ -71,7 +71,7 @@ const projects: Project[] = [
         title: "LetsGo Dashboard",
         link: "https://github.com/FrancisKOUAHO/dashboard.letsgo",
         view: "https://dashboard.letsgoeurope.fr/",
-        imageUrl: "",
+        imageUrl: "letsgo-dashboard.png",
         icon: "🥗",
         description: "LetsGo Dashboard est la partie admin de l'application LetsGo. Elle permet de gerer les utilisateurs, les activités, les commentaires, les notifications, les messages, les statistiques, les paramètres.",
         skills: [
@@ -92,7 +92,7 @@ const projects: Project[] = [
     {
         title: "LetsGo Application",
         link: "https://github.com/FrancisKOUAHO/app.letsgo",
-        imageUrl: "",
+        imageUrl: "app-letsgo.jpeg",
         icon: "📲",
         description: "Lets'Go : explorez, réservez attractions et activités proches.",
         skills: [
@@ -113,7 +113,7 @@ const projects: Project[] = [
     {
         title: "LetsGo Scan",
         link: "https://github.com/FrancisKOUAHO/scan.letsgo",
-        imageUrl: "",
+        imageUrl: "letsgo-scan.jpeg",
         icon: "📲",
         description: "Lecteur QR simple et rapide - GRATUIT. Scan instantané.",
         skills: [
@@ -153,43 +153,9 @@ const projects: Project[] = [
         ]
     },
     {
-        title: "Messiant Calot",
-        view: "https://messiantcalot.fr/",
-        imageUrl: "",
-        icon: "🚧",
-        description: "L'entreprise Messiant Calot.",
-        skills: [
-            {
-                name: "Wordpress",
-                icon: "??"
-            },
-            {
-                name: "Elementor",
-                icon: "??"
-            }
-        ]
-    },
-    {
-        title: "Sud Renovation",
-        view: "https://sudrenovationpiscine.fr/",
-        imageUrl: "",
-        icon: "🌊",
-        description: "L'entreprise Sud Renovation.",
-        skills: [
-            {
-                name: "Wordpress",
-                icon: "??"
-            },
-            {
-                name: "Elementor",
-                icon: "??"
-            }
-        ]
-    },
-    {
         title: "J-P Cheron",
         view: "https://auxfinsgastronomes.com/",
-        imageUrl: "",
+        imageUrl: "aufinsgastronomes.png",
         icon: "🥗",
         description: "L'entreprise J-P Cheron.",
         skills: [

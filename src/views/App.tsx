@@ -13,11 +13,11 @@ const App: FunctionComponent = () => {
         <>
             <Hero/>
 
-            <section className="c-skill">
+            <section className="c-skill" id="skills">
                 <Skills/>
             </section>
 
-            <section className="c-project">
+            <section className="c-project" id="projects">
                 <Project/>
             </section>
 
@@ -29,7 +29,6 @@ const App: FunctionComponent = () => {
                                 <Card
                                     key={index}
                                     title={card.title}
-                                    description={card.description}
                                     image={card.image}
                                 />
                             );
@@ -38,7 +37,7 @@ const App: FunctionComponent = () => {
                 </HorizontalWrapper>
             </section>
 
-            <section className="c-about">
+            <section className="c-about" id="about">
                 <About/>
             </section>
         </>

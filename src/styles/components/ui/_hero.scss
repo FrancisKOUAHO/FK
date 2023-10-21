@@ -4,6 +4,10 @@
   width: 100vw;
   height: 155vh;
 
+  @media screen and (max-width: 767px) {
+    height: 140vh;
+  }
+
   .canvas {
     top: 11rem;
   }
@@ -76,6 +80,15 @@
       font-weight: 700;
       line-height: 1.3;
       letter-spacing: 59px;
+
+      @media screen and (max-width: 767px) {
+        font-size: 100px;
+        letter-spacing: 0;
+
+        span {
+          font-size: 90px;
+        }
+      }
     }
 
     .c-hero__mouse {
@@ -84,6 +97,10 @@
       left: 95%;
       width: 30px;
       z-index: 999;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
   }
 }

@@ -19,6 +19,10 @@
       overflow: hidden;
       z-index: 1;
 
+      @media screen and (max-width: 767px) {
+        padding: 10px;
+      }
+
       &:first-child {
         border-top: .2vw solid $main-color;
       }
@@ -132,7 +136,7 @@
 
           @media screen and (max-width: 767px) {
             span {
-              font-size: 2vw;
+              font-size: 2.5vw;
             }
 
             strong {

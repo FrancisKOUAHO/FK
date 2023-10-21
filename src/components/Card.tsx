@@ -16,7 +16,6 @@ function Card({ title, description, image }: CardProps) {
           width: "100%",
         }}
       >
-        <p className="new">New</p>
         <div className="text">
           <h3>{title}</h3>
           <p>{description}</p>
