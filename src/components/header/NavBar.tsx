@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from "react";
+import {FunctionComponent, useEffect, useState} from "react";
 
 const NavBar: FunctionComponent = () => {
     const [activeSection, setActiveSection] = useState<string>('');
@@ -36,7 +36,6 @@ const NavBar: FunctionComponent = () => {
                 <li className={activeSection === 'skills' ? 'active' : ''}><a href="#skills">Compétences</a></li>
                 <li className={activeSection === 'projects' ? 'active' : ''}><a href="#projects">Projets</a></li>
                 <li className={activeSection === 'about' ? 'active' : ''}><a href="#about">À propos</a></li>
-                <li className={activeSection === 'hire-me' ? 'active' : ''}><a href="#hire-me">Engagez-moi</a></li>
             </ul>
         </nav>
     )
