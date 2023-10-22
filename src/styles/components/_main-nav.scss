@@ -59,4 +59,13 @@
     }
   }
 
+  .c-main-nav__sociaux {
+    display: flex;
+    column-gap: 40px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
 }
