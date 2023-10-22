@@ -1,11 +1,23 @@
 import Header from "../header/Header.tsx";
-import {FunctionComponent} from "react";
+import {FunctionComponent, useState} from "react";
 import {Canvas} from "@react-three/fiber";
 import Experience from "../experience/Experience.tsx";
 
 const Hero: FunctionComponent = () => {
+    // quand on clique sur le bouton, ca fait apparaitre le texte (c-hero__content)
+    const [show, setShow] = useState(false)
+
+    const handleClick = () => {
+        setShow(!show)
+    }
+
+
     return (
         <div className="c-hero">
+            <button onClick={handleClick}>
+                click me
+            </button>
+
             <Canvas
                 flat
                 camera={{position: [0, 2, 5], fov: 40}}
@@ -19,7 +31,7 @@ const Hero: FunctionComponent = () => {
 
                 <h1>Francis <span>KOUAHO</span></h1>
 
-                {/* <div className="c-hero__content">
+                 <div className={`c-hero__content ${show ? 'hidden' : ''}`} >
                         <h2>Bonjour !</h2>
                         <p>Je suis Francis Kouaho, un développeur Front-End passionné par la création d'expériences web
                             exceptionnelles. Mon code est l'intersection de la créativité et de la précision, donnant
@@ -31,7 +43,7 @@ const Hero: FunctionComponent = () => {
                             je serais ravi de rejoindre votre équipe pour collaborer à la création de solutions
                             numériques
                             exceptionnelles.</p>
-                </div>*/}
+                </div>
 
                 <img
                     className="c-hero__mouse"

@@ -39,12 +39,16 @@ const Project: FunctionComponent = () => {
                         <span className="item__number">{(index + 1).toString().padStart(2, '0')}</span>
                         <h2>{project.title}</h2>
                         <div className="item__metas">
-                            <a href={project.link} target="_blank">
-                                <span>voir le projet</span>
-                            </a>
-                            <a href={project.view} target="_blank" className="mt-4">
-                                <strong>Github</strong>
-                            </a>
+                            {
+                                project.link && <a href={project.link} target="_blank">
+                                    <span>voir le projet</span>
+                                </a>
+                            }
+                            {
+                                project.view && <a href={project.view} target="_blank" className="mt-4">
+                                    <strong>Github</strong>
+                                </a>
+                            }
                         </div>
                     </div>
                 </li>
