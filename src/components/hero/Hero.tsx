@@ -5,7 +5,7 @@ import Experience from "../experience/Experience.tsx";
 
 const Hero: FunctionComponent = () => {
     // quand on clique sur le bouton, ca fait apparaitre le texte (c-hero__content)
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(true)
 
     const handleClick = () => {
         setShow(!show)
@@ -14,8 +14,17 @@ const Hero: FunctionComponent = () => {
 
     return (
         <div className="c-hero">
-            <button onClick={handleClick}>
-                click me
+            <button className="rotatingText" onClick={handleClick}>
+                <svg viewBox="0 0 200 200" width="150" height="150">
+                    <defs>
+                        <path id="circle" d="M 100, 100 m -75, 0 a 75, 75 0 1, 0 150, 0 a 75, 75 0 1, 0 -150, 0"></path>
+                    </defs>
+                    <text x="0" y="0">
+                        <textPath href="#circle" className="text">
+                            ☺️☺️☺️ - Cliquez ici pour en savoir plus ! - ☺️☺️☺️
+                        </textPath>
+                    </text>
+                </svg>
             </button>
 
             <Canvas
@@ -31,18 +40,18 @@ const Hero: FunctionComponent = () => {
 
                 <h1>Francis <span>KOUAHO</span></h1>
 
-                 <div className={`c-hero__content ${show ? 'hidden' : ''}`} >
-                        <h2>Bonjour !</h2>
-                        <p>Je suis Francis Kouaho, un développeur Front-End passionné par la création d'expériences web
-                            exceptionnelles. Mon code est l'intersection de la créativité et de la précision, donnant
-                            vie à des
-                            interfaces fluides et intuitives. Explorez mon portfolio pour découvrir mes compétences, mes
-                            projets
-                            innovants et mon parcours professionnel. Si ma passion et mon expertise correspondent à vos
-                            besoins,
-                            je serais ravi de rejoindre votre équipe pour collaborer à la création de solutions
-                            numériques
-                            exceptionnelles.</p>
+                <div className={`c-hero__content ${show ? 'hidden' : ''}`}>
+                    <h2>Bonjour !</h2>
+                    <p>Je suis Francis Kouaho, un développeur Front-End passionné par la création d'expériences web
+                        exceptionnelles. Mon code est l'intersection de la créativité et de la précision, donnant
+                        vie à des
+                        interfaces fluides et intuitives. Explorez mon portfolio pour découvrir mes compétences, mes
+                        projets
+                        innovants et mon parcours professionnel. Si ma passion et mon expertise correspondent à vos
+                        besoins,
+                        je serais ravi de rejoindre votre équipe pour collaborer à la création de solutions
+                        numériques
+                        exceptionnelles.</p>
                 </div>
 
                 <img
