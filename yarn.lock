@@ -596,9 +596,9 @@
     zustand "^3.5.13"
 
 "@react-three/fiber@^8.14.7":
-  version "8.15.3"
-  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.15.3.tgz#2f2f06502d4729252e988c65fb4a3a293e7cf44d"
-  integrity sha512-x6FhY60liPTWg+SEWvXZQP8QXzeUXwLYeIZkAD7H/OcEW1UA9seqzr4YJZlxE2+ppv9qQKStUYU04zbHj3V9LA==
+  version "8.15.4"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.15.4.tgz#d276d8c10b1505f60ef408179f0bdd7aff620a9f"
+  integrity sha512-Wee6fBKD++jF3dMC1nPOYdUwFMnIkWPCb6D7PxoEhmYj7hnDDDEZJN7jigoNt2985fFD72bq6BpvML1GSb7qHA==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
@@ -1297,9 +1297,9 @@ camera-controls@^2.4.2:
   integrity sha512-6+gaZFK3LYbWaXC94EN0BYLlvpo9xfUqwp59vsU3nV7WXIU05q4wyP5TOgyG1tqTHReuBofb20vKfZNBNjMtzw==
 
 caniuse-lite@^1.0.30001538, caniuse-lite@^1.0.30001541:
-  version "1.0.30001551"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001551.tgz#1f2cfa8820bd97c971a57349d7fd8f6e08664a3e"
-  integrity sha512-vtBAez47BoGMMzlbYhfXrMV1kvRF2WP/lqiMuDu1Sb4EE4LKEgjopFDSRtZfdVnslNRpOqV/woE+Xgrwj6VQlg==
+  version "1.0.30001553"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001553.tgz#e64e7dc8fd4885cd246bb476471420beb5e474b5"
+  integrity sha512-N0ttd6TrFfuqKNi+pMgWJTb9qrdJu4JSpgPFLe/lrD19ugC6fZgF0pUewRowDwzdDnb9V41mFcdlYgl/PyKf4A==
 
 chai@^4.3.10:
   version "4.3.10"
