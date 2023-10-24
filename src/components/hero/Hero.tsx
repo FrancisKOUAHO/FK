@@ -1,3 +1,4 @@
+import Header from "../header/Header.tsx";
 import {FunctionComponent, useState} from "react";
 import {Canvas} from "@react-three/fiber";
 import Experience from "../experience/Experience.tsx";
@@ -35,6 +36,7 @@ const Hero: FunctionComponent = () => {
             </Canvas>
 
             <div className="c-hero__wrapper">
+                <Header/>
 
                 <h1>Francis <span>KOUAHO</span></h1>
 
