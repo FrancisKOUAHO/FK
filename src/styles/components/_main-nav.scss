@@ -29,17 +29,11 @@
       > li {
         display: flex;
         align-items: center;
-        font-size: 14px;
+
+        @media screen and (max-width: 767px) {
+          font-size: 14px;
+        }
       }
-    }
-  }
-
-  .c-main-nav__sociaux {
-    display: flex;
-    column-gap: 40px;
-
-    @media screen and (max-width: 767px) {
-      display: none;
     }
   }
 }
