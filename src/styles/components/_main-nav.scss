@@ -23,6 +23,7 @@
   }
 
   .c-main-nav__hamburger {
+    display: none;
 
     @media screen and (max-width: 767px) {
       .hambuger_menu {
