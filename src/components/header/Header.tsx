@@ -1,13 +1,15 @@
 import NavBar from "./NavBar.tsx";
 import {FunctionComponent} from "react";
 import HeaderProps from "../../type/HeaderProps.ts";
+import {NavLink} from "react-router-dom";
 
 const Header: FunctionComponent<HeaderProps> = ({customStyle}) => {
 
     return (
         <header className="c-main-nav" style={customStyle}>
-            <img src="/Francis.png" alt="" width={40}/>
-
+            <NavLink to="/">
+                <img src="/Francis.png" alt="" width={40}/>
+            </NavLink>
 
             <NavBar/>
 

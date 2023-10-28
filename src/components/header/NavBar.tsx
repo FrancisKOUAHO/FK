@@ -1,11 +1,12 @@
 import {FunctionComponent} from "react";
+import {NavLink} from "react-router-dom";
 
 const NavBar: FunctionComponent = () => {
 
     return (
         <nav>
             <ul>
-                <li><a href="">Contacter-moi</a></li>
+                <li><NavLink to="/contact">Contacter-moi</NavLink></li>
             </ul>
         </nav>
     )

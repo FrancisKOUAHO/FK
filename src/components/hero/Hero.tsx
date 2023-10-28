@@ -11,7 +11,6 @@ const Hero: FunctionComponent = () => {
         setShow(!show)
     }
 
-
     return (
         <div className="c-hero">
             <button className="rotatingText" onClick={handleClick}>
